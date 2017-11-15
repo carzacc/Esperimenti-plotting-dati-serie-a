@@ -13,9 +13,9 @@ df  = pd.read_csv("dati.csv")
 print (df)
 # Fixing random state for reproducibility
 
-x = df['Tradizionale']
-y = df['Gol Fatti']
+y = df['Tradizionale']
+x = df['Gol Fatti']
 plt.scatter(x, y)
-plt.xlabel("Punti Tradizionale")
-plt.ylabel("Gol Fatti")
+plt.ylabel("Punti Tradizionale")
+plt.xlabel("Gol Fatti")
 plt.show()
