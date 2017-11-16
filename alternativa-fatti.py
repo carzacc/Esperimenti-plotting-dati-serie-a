@@ -1,9 +1,5 @@
 #!/usr/bin/env python
-'''
-from matplotlib import pyplot as plt
-import numpy as np
-import matplotlib
-'''
+
 from matplotlib import pyplot as plt
 import numpy as np
 import matplotlib
@@ -13,9 +9,9 @@ df  = pd.read_csv("dati.csv")
 print (df)
 # Fixing random state for reproducibility
 
-y = df['Tradizionale']
+y = df['Alternativa']
 x = df['Gol Fatti']
 plt.scatter(x, y)
-plt.ylabel("Punti Tradizionale")
+plt.ylabel("Punti Alternativa")
 plt.xlabel("Gol Fatti")
 plt.show()
